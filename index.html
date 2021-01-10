@@ -17,14 +17,15 @@
             arjs="sourceType: webcam; debugUIEnabled: false;"
         >
             <a-assets>
-                <a-asset-item
+                <!-- <a-asset-item
                     id="animated-asset"
                     src="assets/asset.glb"
-                ></a-asset-item>
-                <!-- <a-asset-item id="santa-obj" src="./assets/santa.obj"></a-asset-item> -->
-                <!-- <a-asset-item id="santa-mtl" src="./assets/santa.mtl"></a-asset-item> -->
+                ></a-asset-item> -->
+                <a-asset-item id="santa-obj" src="./assets/santa.obj"></a-asset-item>
+                <a-asset-item id="santa-mtl" src="./assets/santa.mtl"></a-asset-item>
             </a-assets>
-
+            <a-obj-model id="santa" src="#santa-obj" mtl="#santa-mtl" position="0 0 0" scale="0.05 0.05 0.05" rotation="270 0 0">
+            </a-obj-model>
 
             <!-- ささこう -->
                 <!-- <a-entity
